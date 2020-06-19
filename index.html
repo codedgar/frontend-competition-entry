@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/codedgar/Puppertino/dist/full.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+	<style type="text/css">
+		body{
+			margin: 0px;
+			--ganja:#C5D86D;
+		}
+		.hero{
+			min-height: 100vh;
+			height: 100vh;
+			background: url('https://images.unsplash.com/photo-1534365315265-920d6de1f31d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+			background-size: cover;
+			padding: 0px 40px;
+			color: #e4e4e4;
+		}
+		.hero .row{
+			height: 100%;
+			align-items: center;
+		}
+		.hero p{
+			margin: 0;
+			margin-bottom: 30px;
+		}
+		h1,h2,h3{
+			font-family: 'Abril Fatface', cursive;
+			font-weight: 400;
+		}
+		h1{
+			font-size: 75px;
+			margin: 0;
+		}
+		p,a{
+			font-family: 'Montserrat', sans-serif;
+		}
+		.p-btn-round {
+		    border-radius: 50px;
+		    border: 0px;
+		    padding: 10px 30px;
+		}
+		.title{
+			text-align: center;
+			margin: 2rem 0;
+			font-size: 45px;
+		}
+		.defalt_img{
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+		.card{
+			background: #f5f5f5;
+			border-radius: 30px;
+			box-shadow: 10px 20px 25px -5px rgba(0,0,0,0.1) , 0px 10px 10px -5px rgba(0,0,0,0.04);
+			padding: 20px 30px;
+			margin-bottom: 40px;
+			transition: all .5s;
+			position: relative;
+			overflow: hidden;
+			border: 2px solid #f5f5f5;
+		}
+		.card:before{
+			content: '';
+			position: absolute;
+			z-index: 0;
+			border-radius: 50%;
+			width: 0;
+			height: 0;
+			bottom: 0;
+			right: 0;
+			background: var(--ganja);
+			transition: all 1s;
+			transform-origin: bottom right;
+			mix-blend-mode: hard-light;
+		}
+		.card:hover:before{
+			width: 1000px;
+			height: 1000px;
+			right: -500px;
+			bottom: -500px;
+		}
+		.card:hover{
+			box-shadow: 10px 20px 30px -5px rgba(0,0,0,0.1) , 0px 10px 10px -5px rgba(0,0,0,0.04);
+			transform: scale(1.1);
+		}
+		.card img{
+			max-width: 50px;
+		}
+		.card h3{
+			font-size: 25px;
+			margin:0;
+		}
+		.micro_hero{
+			background: url('https://images.unsplash.com/photo-1555959304-4cfdc80a15d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');
+			background-size: cover;
+			background-position: center;
+			padding: 10vh 2vw;
+			color: #f5f5f5;
+			text-shadow: 0 3px 2px rgba(0,0,0,.5);
+		}
+		.micro_hero h2{
+			font-size: 30px;
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="row">
+			<div class="col-md-6">
+				<p>We don't want you to smoke genetically modified ganja.</p>
+				<h1>We want you to smoke the real thing.</h1>
+				<p>This is... Ganja.</p>
+				<a href="#" class="p-btn p-prim-col p-btn-round">Buy</a>
+				<a href="#" class="p-btn">Legal terms</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row middle-xs around-xs">
+			<div class="col-xs-12">
+				<h2 class="title">Full natural. Full Legal.</h2>
+			</div>
+			<div class="col-md-4">
+				<p>This is the purest shit you'll smoke in your entire life.<br>We mash up the place, Turn up the bass, And make them all have fun, A-we ablaze the fire, Make it burn them
+				<br><br>
+				We mash up the place Turn up the bass And make some soundboy run And we will end your week Just like a Sunday</p>
+			</div>
+			<div class="col-md-6">
+				<img src="https://images.unsplash.com/photo-1589141986943-5578615fdef2?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="defalt_img">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row middle-xs around-xs">
+			<div class="col-xs-12">
+				<h2 class="title">Benefits, dude.</h2>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<img src="https://image.flaticon.com/icons/svg/2907/2907101.svg">
+					<h3>Pure AF.</h3>
+					<p>Our plant is just pure AF, no chemicals, no anything, just ganja.</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card">
+					<img src="https://image.flaticon.com/icons/svg/2907/2907101.svg">
+					<h3>Makes u happy.</h3>
+					<p>Feelin' stressed? Take a hit my dude, feel better in not time</p>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="card">
+					<img src="https://image.flaticon.com/icons/svg/2907/2907101.svg">
+					<h3>No hangovers.</h3>
+					<p>Ganja is 100 times better than Alcohol, there's no hangovers or anything</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="micro_hero">
+		<h2>Are you ready to take a trip?</h2>
+		<p>First order's on us, just pay shipping.</p>
+		<a href="#" class="p-btn p-prim-col p-btn-round">Buy</a>
+	</div>
+</body>
+</html>
